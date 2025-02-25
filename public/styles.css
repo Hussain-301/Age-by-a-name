@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(240,248,255,1) 0%, rgba(80,113,136,1) 100%);
+  padding: 20px;
+  flex-direction: column;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#nameInput {
+  width: 100%;
+  max-width: 350px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+#nameInput::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#nameInput:focus {
+  border-color: #507188;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+input[type="submit"] {
+  width: 100%;
+  max-width: 350px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(125deg, rgba(75,156,211,1) 0%, rgba(0,0,0,1) 100%);
+  background-size: 200%;
+  background-position: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background-position 0.4s ease-in-out, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+  background-position: right;
+  transform: scale(1.05);
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.hidden {
+    opacity: 0;
+
+}
+
+.showed {
+    opacity: 1;
+}

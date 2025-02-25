@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your age by your name</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Estimate the Age of a Name</h1>
+    <div class="container">
+        <div class="text">
+            <div class="form">
+                <form action="/generate" method="get">
+                    <label for="name">Enter your name:</label>
+                    <input type="text" name="name" id="nameInput" placeholder="First Name" maxlength="25">
+                    <input type="submit" value="Know your age">
+                </form>
+            </div>
+            <% if (name && age) { %>
+                <p id="paragraph"><%= name %> is <%= age %> years old.</p>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
